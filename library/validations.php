@@ -8,8 +8,13 @@ function required($field, $input)
         return true;
     }
 }
-function numeric_data()
+function numeric_data($field, $input)
 {
+    if (required($field, $input) && ctype_digit($field)) {
+        return true;
+    } else {
+        throw new \Exception("$input must be numbers");
+    }
 }
 function string_data()
 {
@@ -27,10 +32,10 @@ function valid_phone()
 {
 }
 
-$string = "";
+$string = "1000divine and destiny";
 
 try {
-    $v = required($string, 'password');
+    $v = numeric_data($string, 'street number');
 } catch (\Exception $exception) {
     echo $exception->getMessage();
 }
