@@ -1,0 +1,31 @@
+* User panel
+    1. Register
+    2. Login/Logout
+    3. Booking
+    4. Cancel bookings
+
+
+* Admin panel
+    1. See all registered users
+    2. CRUD operations on registered users
+    3. Appoint bookings to drivers
+    4. See all registered drivers
+
+
+* Drivers panel
+    1. See assigned bookings 
+    2. Register
+    3. Cancel/Accept bookings
+
+
+----------------------------------------------------------------
+Library
+*. Validation
+    1. Required fields
+    2. Validate data type fields
+
+
+Agenda
+1. Draft the various files to use for storage and the structures.
+2. Have the sketch of the frontend using bootstrap.
+3. 
