@@ -1,9 +1,9 @@
 <?php
 
-function required($field)
+function required($field, $input)
 {
     if (empty($field)) {
-        throw new \Exception("Field must not be empty");
+        throw new \Exception("$input must not be empty");
     } else {
         return true;
     }
@@ -27,10 +27,10 @@ function valid_phone()
 {
 }
 
-$string = "Destiny and Shullamite";
+$string = "";
 
 try {
-    $v = required($string);
+    $v = required($string, 'password');
 } catch (\Exception $exception) {
     echo $exception->getMessage();
 }
