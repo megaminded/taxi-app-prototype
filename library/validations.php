@@ -77,19 +77,3 @@ function valid_phone($user_input, $input_name)
         throw new \Exception("Invalid phone number");
     }
 }
-
-// $string = "08069208957s";
-
-// try {
-//     $v = valid_phone($string, 'Driver phone number');
-// } catch (\Exception $exception) {
-//     echo $exception->getMessage();
-// }
-
-
-try {
-    $v = email_exists('storage/drivers.txt', "teste@mail2.com", "Registration email address");
-    var_dump($v);
-} catch (\Exception $exception) {
-    echo $exception->getMessage();
-}
